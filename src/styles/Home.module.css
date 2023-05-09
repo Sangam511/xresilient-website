@@ -1,0 +1,50 @@
+.linebg {
+  background: url("/assets/LooperBG.png") bottom left no-repeat,
+    radial-gradient(
+      circle at 85% 40%,
+      rgba(169, 16, 121, 0.5),
+      transparent 500px
+    );
+}
+
+.revlinebg {
+  background: url("/assets/LooperBGRev.png") bottom right no-repeat,
+    radial-gradient(
+      circle at 2% 70%,
+      rgba(107, 42, 112, 0.7),
+      transparent 500px
+    );
+}
+
+.toprightgradient {
+  background: radial-gradient(
+    circle at 85% 25%,
+    rgba(169, 16, 121, 0.5),
+    transparent 500px
+  );
+}
+
+@media only screen and (max-width: 768px) {
+  .linebg {
+    background: radial-gradient(
+        circle at 70% 15%,
+        rgba(169, 16, 121, 0.5),
+        transparent 300px
+      ),
+      url("/assets/LooperBG.png") center left no-repeat;
+  }
+
+  .revlinebg {
+    background: url("/assets/LooperBGRev.png") center right no-repeat,
+      radial-gradient(
+        circle at 2% 70%,
+        rgba(107, 42, 112, 0.7),
+        transparent 500px
+      ),
+      radial-gradient(
+        circle at 70% 20%,
+        rgba(169, 16, 121, 0.5),
+        transparent 300px
+      );
+  }
+}
